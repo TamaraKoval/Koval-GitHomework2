@@ -22,6 +22,7 @@ public class SalesManager {
                 min = sale;
             }
         }
+        return min;
     }
 
     public int trimmedMean() {
