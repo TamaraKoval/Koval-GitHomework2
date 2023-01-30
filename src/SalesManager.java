@@ -27,12 +27,15 @@ public class SalesManager {
 
     public int trimmedMean() {
         int trimmedMean = 0;
+        int k = 0;
         for (int sale : sales) {
             if (sale == this.min() || sale == this.max()) {
                 continue;
             }
             trimmedMean += sale;
+            k++;
         }
+        trimmedMean /= k;
         return trimmedMean;
     }
 }
